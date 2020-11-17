@@ -1,9 +1,14 @@
+:root {
+    --main-color: slateblue;
+}
+
 body {
     font-family: sans-serif;
+    margin: 0;
 }
 
 .a__block {
-    background: slateblue;
+    background: var(--main-color);
     color: white;
     text-decoration: none;
     margin: 10px;
@@ -15,8 +20,12 @@ body {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
-    background: slateblue;
+    background: var(--main-color);
     color: white;
     display: flex;
     flex-flow: column wrap;
@@ -47,10 +56,61 @@ header nav ul {
 }
 
 .subtitle-section h2 {
-    color: slateblue;
+    color: var(--main-color);
+    font-weight: normal;
 }
 
 section article {
     display: flex;
     flex-flow: row wrap;
 }
+
+section .article__reversed {
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
+section article div {
+    background-color: #f0f0f0;
+    flex: 7;
+    padding: 5% 0 0 5%;
+}
+
+section article img {
+    flex: 9;
+}
+
+section article h3 {
+    margin: 0;
+}
+section article p {
+    margin: 0;
+}
+
+.destination {
+    margin: 0 10% 0 10%;
+    padding: 5px; /*un mic gap fara padding*/
+}
+.destination h3 {
+    color: var(--main-color);
+    margin: 10px 0 10px 0;
+}
+
+.destination p {
+    margin: 10px 0 10px 0;
+}
+
+.destination div {
+    padding: 1.5%;
+}
+
+footer {
+    background: var(--main-color);
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+}
+
