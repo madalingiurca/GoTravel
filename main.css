@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+}
+
+.a__block {
+    background: slateblue;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    border: 1px solid white;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background: slateblue;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    height: 250px;
+}
+
+header nav {
+    top: 0;
+    position: sticky;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.subtitle-section {
+    text-align: center;
+}
+
+.subtitle-section h2 {
+    color: slateblue;
+}
+
+section article {
+    display: flex;
+    flex-flow: row wrap;
+}
