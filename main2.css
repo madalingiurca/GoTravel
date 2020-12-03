@@ -1,0 +1,17 @@
+:root {
+    --main-color: slateblue;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.subtitle-section {
+    text-align: center;
+}
+
+.subtitle-section h2 {
+    color: var(--main-color);
+    font-weight: normal;
+}

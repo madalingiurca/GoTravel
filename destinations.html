@@ -3,88 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main2.css">
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a class="a__block" href="index.html">home</a></li>
-            <li><a class="a__block" href="destinations.html">destinations</a></li>
-            <li><a class="a__block" href="#">language</a> </li>
-        </ul>
-    </nav>
-    <h1>GoTravel</h1>
-</header>
+<app-header>
+    <h1 slot="title">GoTravel</h1>
+</app-header>
 <main>
     <section class="subtitle-section">
         <h2>Destinations</h2>
     </section>
     <section>
-        <article class="destination">
-            <picture>
-                <img src="https://picsum.photos/150?random=1" alt="imgDestination1">
-            </picture>
-            <div>
-                <h3>Destination 1 title</h3>
-                <p>
-                    Destination 1 description
-                </p>
-                <a href="#">> know more</a>
-            </div>
-        </article><article class="destination">
-            <picture>
-                <img src="https://picsum.photos/150?random=2" alt="imgDestination1">
-            </picture>
-            <div>
-                <h3>Destination 2 title</h3>
-                <p>
-                    Destination 2 description
-                </p>
-                <a href="#">> know more</a>
-            </div>
-        </article><article class="destination">
-            <picture>
-                <img src="https://picsum.photos/150?random=3" alt="imgDestination1">
-            </picture>
-            <div>
-                <h3>Destination 3 title</h3>
-                <p>
-                    Destination 3 description
-                </p>
-                <a href="#">> know more</a>
-            </div>
-        </article>
-        <article class="destination">
-            <picture>
-                <img src="https://picsum.photos/150?random=4" alt="imgDestination1">
-            </picture>
-            <div>
-                <h3>Destination 4 title</h3>
-                <p>
-                    Destination 4 description
-                </p>
-                <a href="#">> know more</a>
-            </div>
-        </article>
-        <article class="destination">
-            <picture>
-                <img src="https://picsum.photos/150?random=5" alt="imgDestination1">
-            </picture>
-            <div>
-                <h3>Destination 5 title</h3>
-                <p>
-                    Destination 5 description
-                </p>
-                <a href="#">> know more</a>
-            </div>
-        </article>
+        <destination-post title="Destination 1 title" know_more_url="#" img_url="https://picsum.photos/150?random=1">
+            <p slot="description">Destination 1 description</p>
+        </destination-post>
+        <destination-post title="Destination 2 title" know_more_url="#" img_url="https://picsum.photos/150?random=2">
+            <p slot="description">Destination 2 description</p>
+        </destination-post>
+        <destination-post title="Destination 3 title" know_more_url="#" img_url="https://picsum.photos/150?random=3">
+            <p slot="description">Destination 3 description</p>
+        </destination-post>
+        <destination-post title="Destination 4 title" know_more_url="#" img_url="https://picsum.photos/150?random=4">
+            <p slot="description">Destination 4 description</p>
+        </destination-post>
+        <destination-post title="Destination 5 title" know_more_url="#" img_url="https://picsum.photos/150?random=5">
+            <p slot="description">Destination 5 description</p>
+        </destination-post>
     </section>
 </main>
-<footer>
-    <p>
-        &copy; Madalin ~ DevSchool 2020
-    </p>
-</footer>
+<app-footer>
+    <p slot="cc">&#169; ~ DevSchool 2020</p>
+</app-footer>
+<script type="module" src="src/app-footer.js"></script>
+<script type="module" src="src/app-header.js"></script>
+<script type="module" src="src/destination-post.js"></script>
 </body>
 </html>

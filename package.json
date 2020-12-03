@@ -1,0 +1,27 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgiurca/GoTravel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgiurca/GoTravel/issues"
+  },
+  "homepage": "https://github.com/mgiurca/GoTravel#readme",
+  "description": "",
+  "dependencies": {
+    "lit-element": "^2.4.0",
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "lit-html": "^1.3.0"
+  }
+}

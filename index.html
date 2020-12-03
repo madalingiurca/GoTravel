@@ -3,59 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>GoTravel</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main2.css">
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a class="a__block" href="index.html">home</a></li>
-            <li><a class="a__block" href="destinations.html">destinations</a></li>
-            <li><a class="a__block" href="#">language</a> </li>
-        </ul>
-    </nav>
-    <h1>GoTravel</h1>
-</header>
+<app-header>
+    <h1 slot="title">GoTravel</h1>
+</app-header>
 <main>
     <section class="subtitle-section">
         <h2>Subtitle</h2>
-        <p>
-            Aliquam scelerisque ipsum ante, at sollicitudin libero imperdiet nec.
-            Quisque egestas arcu nec tellus elementum rhoncus
-            </p>
+        <p>Aliquam scelerisque ipsum ante, at sollicitudin libero imperdiet nec.
+            Quisque egestas arcu nec tellus elementum rhoncus</p>
     </section>
     <section>
-        <article>
-            <img src="https://picsum.photos/800/600?random=1" alt="imgArticol1">
-            <div>
-                <h2>Article 1 Title</h2>
-                <h3>Article 1 Subtitle</h3>
-                <p>Article 1 Description<p>
-            </div>
-        </article>
-        <article class="article__reversed">
-            <img src="https://picsum.photos/800/600?random=2" alt="imgArticol2">
-            <div>
-                <h2>Article 2 Title</h2>
-                <h3>Article 2 Subtitle</h3>
-                <p>Article 2 Description<p>
-            </div>
-
-        </article>
-        <article>
-            <img src="https://picsum.photos/800/600?random=3" alt="imgArticol3">
-            <div>
-                <h2>Article 3 Title</h2>
-                <h3>Article 3 Subtitle</h3>
-                <p>Article 3 Description<p>
-            </div>
-        </article>
+        <article-post title="ArticlePost 1 Title" img_url="https://picsum.photos/800/600?random=1">
+            <p slot="subtitle">ArticlePost 1 Subtitle</p>
+            <p slot="description">ArticlePost 1 Description</p>
+        </article-post>
+        <article-post title="ArticlePost 2 Title" img_url="https://picsum.photos/800/600?random=2" reversed>
+            <p slot="subtitle">ArticlePost 2 Subtitle</p>
+            <p slot="description">ArticlePost 2 Description</p>
+        </article-post>
+        <article-post title="ArticlePost 3 Title" img_url="https://picsum.photos/800/600?random=3">
+            <p slot="subtitle">ArticlePost 3 Subtitle</p>
+            <p slot="description">ArticlePost 3 Description</p>
+        </article-post>
     </section>
 </main>
-<footer>
-    <p>
-        &#169; ~ DevSchool 2020
-    </p>
-</footer>
+<app-footer>
+    <p slot="cc">&#169; ~ DevSchool 2020</p>
+</app-footer>
+<script type="module" src="src/article-post.js"></script>
+<script type="module" src="src/app-footer.js"></script>
+<script type="module" src="src/app-header.js"></script>
+<script type="module" src="src/destination-post.js"></script>
 </body>
 </html>
