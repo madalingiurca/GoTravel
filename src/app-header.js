@@ -1,4 +1,4 @@
-import {LitElement, html, css} from "https://unpkg.com/lit-element@2.4.0/lit-element.js?module";
+import {LitElement, html, css} from "lit-element";
 
 class AppHeader extends LitElement{
   constructor() {
@@ -68,8 +68,8 @@ class AppHeader extends LitElement{
     return html`<div>
                   <nav>
                     <ul>
-                      <li><a class="a__block" href="index.html">home</a></li>
-                      <li><a class="a__block" href="destinations.html">destinations</a></li>
+                      <li><a class="a__block" href="/">home</a></li>
+                      <li><a class="a__block" href="/destinations">destinations</a></li>
                       <li><a class="a__block" href="#">language</a> </li>
                     </ul>
                   </nav>

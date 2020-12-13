@@ -1,5 +1,5 @@
 // noinspection JSFileReferences
-import {css, html, LitElement} from "https://unpkg.com/lit-element@2.4.0/lit-element.js?module";
+import {LitElement, html, css} from "lit-element";
 import './article-post.js';
 
 class ArticlesSection extends LitElement {

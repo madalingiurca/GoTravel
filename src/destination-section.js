@@ -1,6 +1,6 @@
 // noinspection JSFileReferences
-import {css, html, LitElement} from "https://unpkg.com/lit-element@2.4.0/lit-element.js?module";
-import './article-post.js';
+import {LitElement, html, css} from "lit-element";
+import './destination-post.js';
 
 class DestinationsSection extends LitElement {
 
@@ -87,4 +87,4 @@ class DestinationsSection extends LitElement {
   }
 }
 
-customElements.define('destinations-section', DestinationsSection)
+export default customElements.define('destinations-section', DestinationsSection)

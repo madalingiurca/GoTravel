@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "live-server",
+    "start": "webpack serve",
+    "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,10 +19,17 @@
   "homepage": "https://github.com/mgiurca/GoTravel#readme",
   "description": "",
   "dependencies": {
+    "@vaadin/router": "^1.7.2",
+    "copy-webpack-plugin": "^7.0.0",
     "lit-element": "^2.4.0",
-    "live-server": "^1.2.1"
+    "webpack-merge": "^5.5.0"
   },
   "devDependencies": {
-    "lit-html": "^1.3.0"
+    "@webpack-cli/serve": "^1.1.0",
+    "html-webpack-plugin": "^4.5.0",
+    "lit-html": "^1.3.0",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
   }
 }
